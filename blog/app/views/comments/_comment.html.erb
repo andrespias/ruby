@@ -1,0 +1,16 @@
+<p>
+	<b>Usuario:</b>
+	<%= comment.commenter %>
+</p>
+
+<p>
+	<b>Comentario:</b>
+	<%= comment.body %>
+</p>
+
+<p>
+	<%= link_to 'Borrar comentario', [comment.post, comment],
+		:confirm => 'Esta seguro?',
+		:method => :delete %>
+
+</p>
